@@ -35,8 +35,18 @@
     <h1>Microsoft Lists</h1>
     <img src="icon.png" alt="Microsoft Lists Logo" width="75" />
     <button onclick="window.location.href='https://lists.live.com'">
-        <img src="log.png" alt="Log" width="20" style="vertical-align: middle; margin-right: 8px;" />
+      <img src="log.png" alt="Log" width="20" style="vertical-align: middle; margin-right: 8px;" />
       Me connecter sur Microsoft Lists
     </button>
+
+    <script>
+      const isPWA =
+        window.matchMedia('(display-mode: standalone)').matches ||
+        window.navigator.standalone === true ||
+        document.referrer.includes('android-app://');
+      if (isPWA) {
+        window.location.href = 'https://lists.live.com';
+      }
+    </script>
   </body>
 </html>
