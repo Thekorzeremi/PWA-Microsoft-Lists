@@ -1,9 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
   <head>
-    <meta http-equiv="refresh" content="0; url=https://lists.live.com" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Microsoft Lists</title>
     <link rel="manifest" href="manifest.json" />
+    <style>
+      body {
+        font-family: sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f3f3f3;
+      }
+      button {
+        padding: 1em 2em;
+        font-size: 1.2em;
+        background-color: #2564cf;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <h1>Microsoft Lists</h1>
+    <p>Accédez à votre espace Lists Microsoft 365</p>
+    <button onclick="window.location.href='https://lists.live.com'">
+      Ouvrir Lists
+    </button>
+  </body>
 </html>
